@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/feature/welcome/presentation/ui/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -57,7 +58,14 @@ class WelcomeScreen extends StatelessWidget {
                             borderRadius: BorderRadiusGeometry.circular(12),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => HomeScreen(),
+                            ),
+                          );
+                        },
                         child: Text(
                           "Let’s Continue",
                           style: TextStyle(color: Colors.white),

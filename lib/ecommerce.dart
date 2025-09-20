@@ -1,5 +1,3 @@
-
-
 import 'package:ecommerce_app/feature/welcome/presentation/ui/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -8,9 +6,7 @@ class Ecommerce extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(home: WelcomeScreen());
 
-      home:WelcomeScreen() ,
-    );
   }
 }
